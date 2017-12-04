@@ -28,37 +28,38 @@ body img:nth-child(even) {
 
 @media only screen and (min-width: 25em) {
 
-body img:nth-child(even) {
-  display: inline-block;
-}
+  img {
+    width: 49%;
+  }
 
-img {
-  width: 49%;
-}
+  body img:nth-child(even) {
+    display: inline-block;
+  }
 
 }
 
 @media only screen and (min-width: 38em) {
 
-body img:first-child {
-  display:none;
-}
+  img {
+    display: inline-block;
+    width: 30%;
+  }
 
-img {
-  display: inline-block;
-  width: 30%;
-}
+  body img:first-child {
+    display: none;
+  }
 
 }
 
 @media only screen and (min-width: 60em) {
 
-  body img:first-child{
+  img {
+    width: 20%;
+  }
+
+  body img:first-child {
     display: inline-block;
     margin-left: 3rem;
   }
-img {
-  width: 20%;
-}
 
 }
