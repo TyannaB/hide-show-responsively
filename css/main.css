@@ -16,3 +16,49 @@ html {
 *, *::before, *::after {
   box-sizing: inherit;
 }
+
+img {
+  display: inline-block;
+  width: 100%;
+}
+
+body img:nth-child(even) {
+  display: none;
+}
+
+@media only screen and (min-width: 25em) {
+
+body img:nth-child(even) {
+  display: inline-block;
+}
+
+img {
+  width: 49%;
+}
+
+}
+
+@media only screen and (min-width: 38em) {
+
+body img:first-child {
+  display:none;
+}
+
+img {
+  display: inline-block;
+  width: 30%;
+}
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  body img:first-child{
+    display: inline-block;
+    margin-left: 3rem;
+  }
+img {
+  width: 20%;
+}
+
+}
